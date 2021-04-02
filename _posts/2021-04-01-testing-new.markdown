@@ -10,3 +10,4 @@ I can see a whole future here. Posting feels incredible.
 
 It could be *rules*. A neuron fires, a bit flips. It fires according to a rule, and it is the dialectic of those rules constraining the available information from which a mind emerges. 
 
+![A murmuration of starlings takes the shape of a bird.](/assets/IMG_4133.JPG)
