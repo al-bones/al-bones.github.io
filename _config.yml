@@ -33,9 +33,12 @@ github_username:  al-bones
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 minima: 
   skin: dark
+
+remote_theme: jekyll/minima
 
 # Exclude from processing.
 # The following items will not be processed, by default.
