@@ -33,3 +33,6 @@ gem "webrick", "~> 1.7"
 
 #Jekyll compose https://github.com/jekyll/jekyll-compose
 gem 'jekyll-compose', group: [:jekyll_plugins]
+
+#google analytics plugin
+gem 'jekyll-analytics'

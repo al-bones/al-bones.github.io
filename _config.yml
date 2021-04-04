@@ -35,10 +35,14 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+
 minima: 
   skin: dark
 
 remote_theme: jekyll/minima
+
+# Google Analytics
+google_analytics: G-Q0M528DVVC
 
 # Exclude from processing.
 # The following items will not be processed, by default.
