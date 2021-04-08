@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+// .post-title, .post-content h1 {
+//     font-family: "Dela Gothic One";
+// }
+
+// /**
+//  * Site header
+//  */
+// .site-header {
+//     border-top: 1px solid $grey-color-dark;
+// }
+// h1.post-title.post-name {
+//     font-weight: 800;
+//     font-family: "Dela Gothic One";
+// }
+.wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media screen and (min-width: 800px) {
+    .wrapper {
+        max-width: 450px;
+        padding-right: 30px;
+        padding-left:30px;
+        margin-left:10%;
+    }
+}
+
+h1 {
+    font-family: "EB Garamond";
+}
