@@ -36,3 +36,6 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 
 #google analytics plugin
 gem 'jekyll-analytics'
+
+#generate sitemap for seo
+gem 'jekyll-sitemap'
