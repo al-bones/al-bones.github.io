@@ -1,5 +1,10 @@
 @charset "utf-8";
-
+a {
+  color: white;
+}
+a:visited {
+  color: white;
+}
 .site-header {
     border: none;
 }
@@ -7,6 +12,10 @@
     font-family: "Helvetica Neue";
     font-size: 18px;
     font-weight: bold;
+    color: white;
+}
+.site-title, .site-title:visited {
+  color: white;
 }
 .site-nav {
     float: right;
@@ -105,6 +114,7 @@
   }
 
 .wrapper {
+    max-width: 600px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -118,4 +128,35 @@
         padding-left:30px;
         margin-left:30%;
     }
+}
+
+h1, h2, h3 {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+}
+.post-list {
+  margin-top: 140px;
+  padding-top: 16px;
+  border-top: 2px solid white;
+}
+.post-list > li {
+  // margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  /* margin-bottom: 30px; */
+}
+.post-list > li:last-child {
+  border-bottom: none;
+}
+.post-title, .post-link {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-weight: bold;
+}
+.post-header {
+  padding-top: 16px;
+  border-top: 2px solid white;
+  margin-top: 140px;
+  margin-left:56px;
 }

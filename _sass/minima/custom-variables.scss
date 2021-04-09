@@ -19,9 +19,11 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
     max-width: 600px;
 }
 h1, h2, h3 {
-    font-family: "Dela Gothic One";
+    font-family: "Helvetica Neue";
+    font-weight: bold;
 }
 .post-title, .post-link {
-    font-family: "Dela Gothic One";
+    font-family: "Helvetica Neue";
     font-size: 18px;
+    font-weight: bold;
 }
