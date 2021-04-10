@@ -13,6 +13,14 @@ a:visited {
     font-size: 18px;
     font-weight: bold;
     color: white;
+    // font-family: Helvetica;
+    font-style: normal;
+    // font-weight: bold;
+    // font-size: 18px;
+    // line-height: 21px;
+    /* identical to box height */
+    letter-spacing: normal;
+    color: #FFFFFF;
 }
 .site-title, .site-title:visited {
   color: white;
@@ -112,7 +120,20 @@ a:visited {
       }
     }
   }
+.page-link {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
 
+  text-align: right;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
 .wrapper {
     max-width: 600px;
     padding-left: 16px;
@@ -153,7 +174,9 @@ h1, h2, h3 {
   font-family: "Helvetica Neue";
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: normal;
 }
+
 .post-header {
   padding-top: 16px;
   border-top: 2px solid white;
