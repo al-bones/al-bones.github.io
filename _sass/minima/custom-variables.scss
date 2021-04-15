@@ -15,15 +15,3 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-.wrapper {
-    max-width: 600px;
-}
-h1, h2, h3 {
-    font-family: "Helvetica Neue";
-    font-weight: bold;
-}
-.post-title, .post-link {
-    font-family: "Helvetica Neue";
-    font-size: 18px;
-    font-weight: bold;
-}
