@@ -2,6 +2,7 @@
 layout: post
 title: Okay, that's weird.
 date: 2021-04-04 09:25 -0700
+category: Words
 ---
 
 What is weird fiction? I've just learned of the (sub)genre as like a thing that Poe and Lovecraft were doing. It irks me when something highly specific and cultural, like say an ancient tentacled monster rising from fissures in the earth (idk, I haven't actually read any of Lovecraft's Cthulu stuff, I'm mostly going off the Southpark episode lol) is named with such typical words, makes it feel cheap.
