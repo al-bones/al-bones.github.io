@@ -164,19 +164,30 @@ h3 {
 // ----------POSTS--------------
 // ------------------------------
 .post-list {
-  margin-top: 140px;
-  padding-top: 16px;
+  margin-top: 72px;
+  padding-top: 24px;
   border-top: 2px solid white;
 }
 .post-list > li {
   // margin-bottom: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
   /* margin-bottom: 30px; */
+  display: flex;
+  justify-content: space-between;
 }
 .post-list > li:last-child {
   border-bottom: none;
+}
+.test {
+  display: none;
+}
+li > h3 {
+  display: inline-block;
+  text-align: right;
+  vertical-align: baseline;
+  margin-bottom: 0;
 }
 .post-title,
 .post-link {
@@ -189,11 +200,15 @@ h3 {
 .post-header {
   padding-top: 16px;
   border-top: 2px solid white;
-  margin-top: 140px;
+  // margin-top: 140px;
+  margin-bottom: 24px;
   // margin-left: 56px;
 }
 .post-meta {
-  float: right;
+  display: inline-block;
+  // float: right;
+  margin-bottom: 0;
+  padding-top: 6px;
 }
 // ----------FOOTER--------------
 // ------------------------------
