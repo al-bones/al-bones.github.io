@@ -320,7 +320,6 @@ li > h3 {
 // New layouts
 body {
   /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,7 +329,8 @@ body {
   // width: 986px;
   // height: 719px;
 
-  background: #1e1e1e;
+  // background-color: $background-color;
+  // background: #000000;
 }
 .stack {
   /* Auto layout */
