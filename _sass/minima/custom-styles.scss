@@ -9,32 +9,28 @@ a:visited {
 }
 .nav-wrapper {
   /* Auto layout */
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 0px;
+  align-items: center;
+  padding: 96px 48px;
   width: 624px;
 }
 .site-title-wrapper {
   display: flex;
+  padding: 48px 0;
 }
 .site-header {
   border: none;
 }
 .site-title {
-  // font-family: "Helvetica Neue";
-  font-size: 18px;
-  font-weight: bold;
+  font-family: "EB Garamond";
+  font-size: 72px;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: normal;
   color: #ffffff;
-  font-family: "SF Mono";
-  font-style: normal;
-  font-weight: 400;
-  // font-size: 16px;
-  line-height: 24px;
+  line-height: 96px;
 }
 .site-title,
 .site-title:visited {
