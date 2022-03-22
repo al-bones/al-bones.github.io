@@ -12,33 +12,41 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 96px 48px;
-  width: 624px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 624px;
+  padding-left: 24px;
 }
-.site-title-wrapper {
-  display: flex;
-  padding: 48px 0;
-}
+
 .site-header {
   border: none;
+  width: 100%;
+}
+.site-title-wrapper {
+  margin-top: 196px;
+  margin-bottom: 122px;
 }
 .site-title {
   font-family: "EB Garamond";
-  font-size: 72px;
+  font-size: 48px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: normal;
   color: #ffffff;
-  line-height: 96px;
+  line-height: 72px;
+  width: 196px;
 }
 .site-title,
 .site-title:visited {
   color: white;
 }
 .site-nav {
-  // float: right;
+  float: none;
+  position: inherit;
   line-height: $base-line-height * $base-font-size * 2.25;
+  border: none;
+  text-align: left;
+  margin-bottom: 72px; /* just picked a random # */
 
   .nav-trigger {
     display: none;
@@ -49,46 +57,53 @@ a:visited {
   }
 
   .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+    font-family: "EB Garamond";
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    // font-variant: small-caps;
+    text-transform: uppercase;
+    margin-left: 0px;
+    padding: 0px;
+    // // Gaps between nav items, but not on the last one
+    // &:not(:last-child) {
+    //   margin-right: 20px;
+    // }
   }
 
   @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
+    // position: absolute;
+    // top: 9px;
+    // right: $spacing-unit / 2;
     background-color: $background-color;
     //   border: 1px solid $grey-color-light;
-    border: none;
-    border-radius: 5px;
-    text-align: right;
+    // border: none;
+    // border-radius: 5px;
+    // text-align: right;
 
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 56px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+    // label[for="nav-trigger"] {
+    //   display: block;
+    //   float: right;
+    //   width: 56px;
+    //   height: 36px;
+    //   z-index: 2;
+    //   cursor: pointer;
+    // }
+    // .menu-icon {
+    //   display: block;
+    //   float: right;
+    //   width: 36px;
+    //   height: 26px;
+    //   line-height: 0;
+    //   padding-top: 10px;
+    //   text-align: center;
 
-      > svg {
-        fill: $grey-color-dark;
-      }
-    }
+    // > svg {
+    //   fill: $grey-color-dark;
+    // }
+
     // .menu-icon {
     //     /* About */
     //     // position: absolute;
@@ -120,37 +135,39 @@ a:visited {
       padding-bottom: 5px;
     }
 
-    .page-link {
-      display: block;
-      padding: 5px 10px;
+    // .page-link {
+    //   display: block;
+    //   // padding: 5px 10px;
 
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
+    //   //   &:not(:last-child) {
+    //   //     margin-right: 0;
+    //   //   }
+    //   //   margin-left: 20px;
+    //   // }
+    // }
+
+    // .page-link {
+    //   font-family: "SF Mono";
+    //   font-style: italic;
+    //   font-weight: 300;
+    //   font-size: 16px;
+    //   line-height: 24px;
+    //   /* identical to box height, or 150% */
+    //   text-align: right;
+    //   color: #ffffff;
+    //   opacity: 0.5;
+    //   letter-spacing: 0.2px;
+    //   // text-transform: uppercase;
+    //   color: #ffffff;
+    // }
+    .wrapper {
+      max-width: 600px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
 }
-.page-link {
-  font-family: "SF Mono";
-  font-style: italic;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-  text-align: right;
-  color: #ffffff;
-  opacity: 0.5;
-  letter-spacing: 0.2px;
-  // text-transform: uppercase;
-  color: #ffffff;
-}
-.wrapper {
-  max-width: 600px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 624px) {
   body {
     font-size: 18px;
   }
@@ -160,13 +177,34 @@ a:visited {
     // padding-left: 30px;
     // margin-left:30%;
   }
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Helvetica Neue";
-  font-weight: bold;
+  .site-title {
+    font-family: "EB Garamond";
+    font-size: 72px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    line-height: 96px;
+    width: fit-content;
+  }
+  .nav-wrapper {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 96px 48px;
+    padding: 0px;
+    max-width: inherit;
+  }
+  .site-title-wrapper {
+    // display: flex;
+    padding: 48px 0;
+  }
+  .site-header {
+    border: none;
+    width: fit-content;
+  }
 }
 
 // ----------POSTS--------------
@@ -199,10 +237,10 @@ li > h3 {
 }
 .post-title,
 .post-link {
-  font-family: "Helvetica Neue";
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: normal;
+  // font-family: "Helvetica Neue";
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
 }
 
 .post-header {
@@ -405,7 +443,7 @@ body {
   left: 0px;
   // top: 48px;
 
-  border: 1px solid #ffffff;
+  border: 0.5px solid #ffffff;
 
   /* Inside auto layout */
 
@@ -415,11 +453,11 @@ body {
   // margin: 24px 0px;
 }
 .date {
-  color: rgba(255, 255, 255, 0.3);
-  font-family: "SF Mono";
-  font-style: normal;
+  // color: rgba(255, 255, 255, 0.3);
+  // font-family: "SF Mono";
+  font-style: italic;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   /* identical to box height, or 150% */
 
@@ -431,7 +469,7 @@ body {
 }
 .headline {
   margin: 0;
-  font-family: "SF Pro Text";
+  // font-family: "SF Pro Text";
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
