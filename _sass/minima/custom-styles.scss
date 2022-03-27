@@ -259,6 +259,9 @@ li > h3 {
 // BASIC RESPONSIVE FOOTER
 // going to merge commits becuase i need the rest of the page
 // to be responsive to make the new footer match
+.site-footer {
+  width: 100%;
+}
 
 @media screen and (min-width: 800px) {
   .footer-col-1 {
@@ -276,7 +279,7 @@ li > h3 {
     border: none;
     padding: 0px;
     width: 100%;
-    margin-top: 218px;
+    margin-top: 96px;
     margin-bottom: 56px;
   }
   .site-footer .wrapper {
