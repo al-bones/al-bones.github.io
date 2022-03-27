@@ -167,12 +167,16 @@ a:visited {
     }
   }
 }
+.page-content {
+  width: 100%;
+}
 @media screen and (min-width: 624px) {
   body {
     font-size: 18px;
   }
   .wrapper {
     max-width: 624px;
+    // width: 100%;
     // padding-right: 30px;
     // padding-left: 30px;
     // margin-left:30%;
@@ -205,6 +209,9 @@ a:visited {
     border: none;
     width: fit-content;
   }
+  // .page-content {
+  //   width: 100%;
+  // }
 }
 
 // ----------POSTS--------------
