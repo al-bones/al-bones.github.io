@@ -8,7 +8,7 @@
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
-              {{ site.title | escape }}
+              <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
             {%- endif -%}
             </li>
             {%- if site.email -%}
@@ -16,20 +16,6 @@
             {%- endif -%}
         </ul>
       </div>
-
-      <!-- <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-        <div><p class="footer-name">Estragon:</p><p><i>[giving up again]</i> Nothing to be done.</p></div>
-        <p class="footer-name">Vladimir:</p><p><i>[advancing with short, stiff, strides, legs wide apart]</i> I'm beginning to come round to that opinion.</p>
-      </div> -->
-
-      <!-- <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-        <p><i>[giving up again]</i> Nothing to be done.</p>
-        <p><i>[advancing with short, stiff, strides, legs wide apart]</i> I'm beginning to come round to that opinion.</p>
-      </div> -->
     </div>
-
   </div>
-
 </footer>
